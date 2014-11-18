@@ -1,17 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<theme name="HC v3.0 Red" version="1801">
+<theme name="HC v3.0 Red" version="1802">
 	<properties>
 		<templateset><![CDATA[8]]></templateset>
 		<editortheme><![CDATA[default.css]]></editortheme>
 		<imgdir><![CDATA[images/stb]]></imgdir>
-		<logo><![CDATA[http://i.imgur.com/T4RQGBU.png]]></logo>
+		<logo><![CDATA[http://i.imgur.com/TqBFNZi.png]]></logo>
 		<tablespace><![CDATA[4]]></tablespace>
 		<borderwidth><![CDATA[0]]></borderwidth>
 		<color><![CDATA[]]></color>
 		<disporder><![CDATA[a:7:{s:10:"global.css";i:1;s:8:"css3.css";i:2;s:17:"thread_status.css";i:3;s:10:"usercp.css";i:4;s:9:"modcp.css";i:5;s:16:"star_ratings.css";i:6;s:14:"showthread.css";i:7;}]]></disporder>
 	</properties>
 	<stylesheets>
-		<stylesheet name="global.css" version="1801"><![CDATA[body {
+		<stylesheet name="global.css" version="1802"><![CDATA[#topmenu ul {
+    background: none repeat scroll 0 0 #0c0c0c;
+    height: 34px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+}
+#topmenu li {
+    cursor: pointer;
+    display: block;
+    float: left;
+    padding: 0.6em;
+}
+#topmenu li:hover {
+    background: none repeat scroll 0 0 #a82126;
+}
+#topmenu img {
+    display: block;
+    float: left;
+}
+#topmenu {
+    color: #fff;
+    float: left;
+    height: 34px;
+}
+#topmenu li a {
+    color: #fff;
+}
+#search input.textbox {
+    border-color: #0c0c0c #0c0c0c #0c0c0c -moz-use-text-color;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px 0;
+    height: 20px;
+    margin-left: -4px;
+}
+#search img {
+    background-color: #333;
+    border-color: #0c0c0c;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    margin: 0;
+    padding: 7px;
+    width: 12px;
+    height: 12px;
+    vertical-align: -50%;
+}
+#search input.button {
+    border: 1px solid #0c0c0c;
+    height: 28px;
+    margin: 0;
+}
+#search {
+    float: right;
+    padding: 0px;
+    margin-top: 3px;
+}
+body {
     background: none repeat scroll 0 0 #161616;
     color: #3d3d3d;
     font-family: Helvetica,Arial,sans-serif;
@@ -124,31 +180,32 @@ a.postbit_multiquote_on {
 }
 #header {
     background: none repeat scroll 0 0 #0c0c0c;
-    height: 134px;
+    height: 114px;
     padding: 5px 0;
 }
 .hd {
     margin: auto;
     width: 90%;
 }
-.menu ul {
+.menu {
     color: #000;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
-    padding: 20px;
+    margin-top: 10px;
+    padding: 5px;
     text-align: right;
 }
-.menu ul a:link {
+.menu a:link {
     color: #fff;
     font-family: sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 }
-.menu ul a:visited {
+.menu a:visited {
     color: #fff;
     text-decoration: none;
 }
-.menu ul a:hover, .menu ul a:active {
+.menu a:hover, .menu ul a:active {
     color: #888;
     text-decoration: none;
 }
@@ -218,11 +275,11 @@ table {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    background: url("http://i.imgur.com/7vNebX2.png") repeat-x scroll 0 0 rgba(128, 27, 27, 1);
+    background: url("http://i.imgur.com/g4ouN6a.png") repeat-x scroll 0 0 #a82322;
     border-image: none;
     color: #fff;
     height: 34px;
-    line-height: 16px;
+    line-height: 34px;
     margin: -1px;
     padding-left: 10px;
     padding-right: 10px;
@@ -564,6 +621,7 @@ img {
 }
 .expcolimage {
     float: right;
+    margin-top: 5px;
     vertical-align: top;
     width: auto;
 }
@@ -956,6 +1014,9 @@ div.error ul {
 .post_rtop {
     background: none repeat scroll 0 0 #202020;
 }
+.post_rtop a {
+    color: #03a3dd;
+}
 .post_lbot {
     background: none repeat scroll 0 0 #313131;
     border-bottom: 1px solid #444;
@@ -1281,10 +1342,10 @@ div.jqi .jqisubstate .jqibuttons button {
 }
 ]]>
 		</stylesheet>
-		<stylesheet name="css3.css" version="1801"><![CDATA[
+		<stylesheet name="css3.css" version="1802"><![CDATA[
 		]]>
 		</stylesheet>
-		<stylesheet name="thx_buttons.css" version="1801"><![CDATA[.thx_buttons{
+		<stylesheet name="thx_buttons.css" version="1802"><![CDATA[.thx_buttons{
 		color: #424242;
 		background: transparent;
 		border: none;
@@ -1414,7 +1475,7 @@ div.jqi .jqisubstate .jqibuttons button {
 		border-radius: 4px;
 }]]>
 		</stylesheet>
-		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1801"><![CDATA[.thread_status {
+		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1802"><![CDATA[.thread_status {
 	display: inline-block;
 	width: 16px;
 	height: 16px;
@@ -1491,7 +1552,7 @@ div.jqi .jqisubstate .jqibuttons button {
 }
 		]]>
 		</stylesheet>
-		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1801"><![CDATA[.star_rating,
+		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1802"><![CDATA[.star_rating,
 .star_rating li a:hover,
 .star_rating .current_rating {
 	background: url(images/star_rating.png) left -1000px repeat-x;
@@ -1579,7 +1640,7 @@ td .star_rating {
 	padding-right: 5px;
 }]]>
 		</stylesheet>
-		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1801"><![CDATA[.usercp_nav_item {
+		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1802"><![CDATA[.usercp_nav_item {
 	display: block;
 	padding: 1px 0 1px 23px;
 	background-image: url(images/usercp_sprite.png);
@@ -1728,7 +1789,7 @@ td .star_rating {
 	display: inline-block;
 }]]>
 		</stylesheet>
-		<stylesheet name="showthread.css" attachedto="showthread.php" version="1801"><![CDATA[ul.thread_tools,
+		<stylesheet name="showthread.css" attachedto="showthread.php" version="1802"><![CDATA[ul.thread_tools,
 ul.thread_tools li {
 	list-style: none;
 	padding: 0;
@@ -1774,7 +1835,7 @@ ul.thread_tools li.poll {
 
 ]]>
 		</stylesheet>
-		<stylesheet name="modcp.css" attachedto="modcp.php" version="1801"><![CDATA[.modcp_nav_item {
+		<stylesheet name="modcp.css" attachedto="modcp.php" version="1802"><![CDATA[.modcp_nav_item {
 	display: block;
 	padding: 1px 0 1px 23px;
 	background-image: url(images/modcp_sprite.png);
@@ -1969,11 +2030,11 @@ ul.thread_tools li.poll {
 		</div></div>
 		</div></div>
 				<div id="debug"><debugstuff></div>]]></template>
-		<template name="forumbit_depth1_cat" version="1800"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+		<template name="forumbit_depth1_cat" version="1801"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
 <thead>
 <tr>
 <td class="thead" colspan="5">
-<div class="expcolimage"><img src="{$theme['imgdir']}/collapse.png" width="16px" height="23px" id="cat_{$forum['fid']}_img" class="expander" alt="{$expaltext}" title="{$expaltext}" /></div>
+<div class="expcolimage"><img src="{$theme['imgdir']}/collapse.png" width="16px" height="17px" id="cat_{$forum['fid']}_img" class="expander" alt="{$expaltext}" title="{$expaltext}" /></div>
 <div><strong><a href="{$forum_url}">{$forum['name']}</a></strong></div>
 </td>
 </tr>
@@ -2062,18 +2123,13 @@ ul.thread_tools li.poll {
 	<div class="float_right"><a href="{$mybb->settings['bburl']}/private.php?action=dismiss_notice&amp;my_post_key={$mybb->post_code}" title="{$lang->dismiss_notice}" onclick="return MyBB.dismissPMNotice('{$mybb->settings['bburl']}/')"><img src="{$theme['imgdir']}/dismiss_notice.gif" alt="{$lang->dismiss_notice}" title="{$lang->dismiss_notice}" /></a></div>
 	<div>{$privatemessage_text}</div>
 </div>]]></template>
-		<template name="header" version="1800"><![CDATA[<a name="top" id="top"></a>
+		<template name="header" version="1801"><![CDATA[<a name="top" id="top"></a>
 		<div id="header">
                      <div class="hd">
-			<div class="logo" style="float: left;"><a href="{$mybb->settings['bburl']}/index.php"><img src="{$theme['logo']}" alt="{$mybb->settings['bbname']}" title="{$mybb->settings['bbname']}" /></a></div>
-			<div class="menu" style="float: right;">
-				<ul>
-					<li><a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a></li>
-					<li><a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a></li>
-					<li><a href="{$mybb->settings['bburl']}/calendar.php">{$lang->toplinks_calendar}</a></li>
-					<li><a href="{$mybb->settings['bburl']}/misc.php?action=help">{$lang->toplinks_help}</a></li>
-				</ul>
-			</div>
+			<div class="logo" style="float: left;"><a href="{$mybb->settings['bburl']}"><img src="{$theme['logo']}" alt="{$mybb->settings['bbname']}" title="{$mybb->settings['bbname']}" /></a></div>
+			<span class="menu" style="float: right;">
+			<a href="{$mybb->settings['bburl']}/member.php?action=logout&amp;logoutkey={$mybb->user['logoutkey']}">{$lang->welcome_logout}</a>
+			</span>
                </div></div>
                 <navigation>
 		<hr class="hidden" />
@@ -2143,12 +2199,44 @@ ul.thread_tools li.poll {
 <div style="float: right;">
 <a href="{$mybb->settings['bburl']}/member.php?action=register" class="reg">{$lang->welcome_register}</a>
 </div>]]></template>
-		<template name="header_welcomeblock_member" version="1800"><![CDATA[	<span style="float:right;">{$lang->welcome_current_time}</span>
-		{$lang->welcome_back} (<a href="{$mybb->settings['bburl']}/usercp.php"><strong>{$lang->welcome_usercp}</strong></a>{$modcplink}{$admincplink} &mdash; <a href="{$mybb->settings['bburl']}/member.php?action=logout&amp;logoutkey={$mybb->user['logoutkey']}">{$lang->welcome_logout}</a>)<br />
-				<span class="links">
-					<a href="#" onclick="MyBB.popupWindow('{$mybb->settings['bburl']}/misc.php?action=buddypopup', null, true); return false;">{$lang->welcome_open_buddy_list}</a>
-				</span>
-				<a href="{$mybb->settings['bburl']}/search.php?action=getnew">{$lang->welcome_newposts}</a> | <a href="{$mybb->settings['bburl']}/search.php?action=getdaily">{$lang->welcome_todaysposts}</a> | <a href="{$mybb->settings['bburl']}/search.php?action=finduser&uid={$mybb->user['uid']}">View My Posts</a> | <a href="{$mybb->settings['bburl']}/private.php">{$lang->welcome_pms}</a> {$lang->welcome_pms_usage}]]></template>
+		<template name="header_welcomeblock_member" version="1801"><![CDATA[{$lang->welcome_back}
+<br /></div>
+
+<div id="topmenu">
+  <ul>
+    <li><a href="{$mybb->settings['bburl']}/search.php?action=getnew">New 
+
+Posts</a></li>
+    <li><a href="{$mybb->settings['bburl']}/search.php?action=getdaily">Today's Posts</a></li>
+    <li><a href="{$mybb->settings['bburl']}/search.php?action=finduser&uid={$mybb->user['uid']}">My Posts</a></li>
+    <img src="http://i.imgur.com/OldfcOl.png">
+    <li><a href="{$mybb->settings['bburl']}/usercp.php">User CP</a></li>
+    <li>{$modcplink}</li>
+    <img src="http://i.imgur.com/OldfcOl.png">
+    <li><a href="#" onclick="MyBB.popupWindow('{$mybb->settings['bburl']}/misc.php?action=buddypopup', null, true); return false;">Buddy list</a></li>
+    <img src="http://i.imgur.com/OldfcOl.png">
+    <li><a href="http://www.hackcommunity.rocks/memberlist.php">Member 
+
+List</a></li>
+    <img src="http://i.imgur.com/OldfcOl.png">
+  <li><a href="{$mybb->settings['bburl']}/newpoints.php">HC coins</a></li>
+    <img src="http://i.imgur.com/OldfcOl.png">
+    <li><a href="{$mybb->settings['bburl']}/private.php">{$lang->welcome_pms}</a> {$lang->welcome_pms_usage}</li>
+  </ul>
+</div>
+<div id="search">
+<form action="http://www.hackcommunity.rocks/search.php" method="post">
+<input type="hidden" value="do_search" name="action">
+<input type="hidden" value="1" name="postthread">
+<input type="hidden" value="all" name="forums">
+<input type="hidden" value="threads" name="showresults">
+<img src="http://i.imgur.com/eX29Ux2.png">
+<input type="text" value="" maxlength="250" name="keywords" placeholder="Search..." class="textbox">
+<!-- start: gobutton -->
+<!--<input type="submit" value="Go" class="button"> -->
+<!-- end: gobutton -->
+</form>
+</div><br>]]></template>
 		<template name="header_welcomeblock_member_admin" version="1800"><![CDATA[<a href="{$mybb->settings['bburl']}/{$admin_dir}/index.php" class="admincp">{$lang->welcome_admin}</a>]]></template>
 		<template name="header_welcomeblock_member_moderator" version="1800"><![CDATA[<a href="{$mybb->settings['bburl']}/modcp.php" class="modcp">{$lang->welcome_modcp}</a>]]></template>
 		<template name="index" version="1800"><![CDATA[<html>
@@ -2570,7 +2658,7 @@ ul.thread_tools li.poll {
 	$('#multiquote_link_{$post['pid']}').css("display", "");
 // -->
 </script>]]></template>
-		<template name="postbit_posturl" version="1801"><![CDATA[<div class="float_right" style="vertical-align: top; margin-top:8px;">
+		<template name="postbit_posturl" version="1801"><![CDATA[<div class="float_right" style="vertical-align: top;">
 <strong><a href="{$post['postlink']}#pid{$post['pid']}" title="{$post['subject_title']}">#{$post_number}</a></strong>
 {$post['inlinecheck']}
 </div>]]></template>
